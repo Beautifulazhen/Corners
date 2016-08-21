@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Corners</title>
+	<link rel="stylesheet" type="text/css" href="Corners.css">
+	<script src="jquery.js"></script>
+	<script src="Corners.js"></script>
+	<script src="index.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="all_alph">
+			<div class="alph c">C</div>
+			<div class="alph o">o</div>
+			<div class="alph n">n</div>
+			<div class="alph e">e</div>
+			<div class="alph r">r</div>
+			<div class="alph s">s</div>
+		</div>
+	</header>
+	<section id="introduction"  class="section">
+		<h1>Quick Introduction</h1>
+		<article>
+			<p>This is a light weight jQuery plugin to create diverse corner
+			effects,such as scoop,folded and so on.</p>
+			<p>It just uses some pure CSS3 tricks without no images.</p>
+			<p>If you are interested in how to do this,you can read the book of <a href="https://book.douban.com/subject/26295140/" class="a_style">CSS Secrets</a> by Lea Verou which enlighten me to make it<p>
+		</article>
+		<a href="" class="gitbtn" target="_blank">
+			<span class="git_icon"></span>
+			<span class="git_text"></span>
+		</a>
+	</section>
+	<section id="guide"  class="section">
+		<h1>Getting Started</h1>
+		<article>
+			<p>
+			<span class="step">Step one:</span><br>
+			You need to import jQuery and Corners.js like this:
+			<xmp>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="Corners.js" type="text/javascript"></script>	
+			</xmp>
+			</p>
+			<p>
+			<span class="step">Step two:</span><br>
+			Suppose that you need to add a kind of corner to the div element which id is corner in the html:
+			<xmp><div id="corner"></div></xmp>
+			<p>Just use it this way in your js:</p>
+			<xmp>$('#corner').Corners();</xmp>
+			</p>
+		</article>
+	</section>
+	<section id="documentation" class="section">
+		<h1>Documentation</h1>
+		<article>
+			<p>Here are some parameters to set and which are not compulsory.Default values are as follows:</p>
+			<section id="default">
+			<xmp>extents:15px
+angle:30
+style:beveled
+defaults:3</xmp>
+			</section>
+			<section id="parameters">
+				<article>
+				<p><span class="para">style:</span>&nbsp;<span>&lt;String&gt;</span><br> As it's name suggests,the style means you can choose what kind of corner you want.</p>
+				<p><span class="para">size:</span>&nbsp;<span>&lt;Integer&gt;</span><br>  without unit.<br> When you want a folded corner, you can decide how big it is.<span class="tips">Tips</span>:the unit is designed em. </p>
+				<p><span class="para">angle:</span>&nbsp;<span>&lt;Integer&gt;</span><br> without unit.<br> When you want a folded corner,you can set an angle to show how to fold the element.</p>
+				<p><span class="para">extents:</span>&nbsp;<span>&lt;String&gt;</span><br> with the unit 'px'<br>.When you want a beveled or scoop Corner.Not only you can decide how big it is.</p>
+				</articel>
+			</section>
+		</article>
+	</section>
+	<section id="example" class="section">
+		<h1>Examples</h1>
+		<section class="example_item clearfix">
+			<div class="code">
+				<xmp class="exa"><div id="folded_a"></div></xmp>
+				<xmp>$('#folded_a').Corners({
+style:'folded',
+angle:'50'
+})</xmp>
+			</div>
+			<div class="result">
+				<div id="folded_a">folded</div>
+			</div>
+		</section>
+		<section class="example_item clearfix">
+			<div class="code">
+				<xmp class="exa"><div id="folded_b"></div></xmp>
+				<xmp>$('#folded_b').Corners({
+type:'scoop'
+})</xmp>
+			</div>
+			<div class="result"><div id="folded_b">scoop</div></div>
+		</section>
+		<section class="example_item clearfix">
+			<div class="code">
+				<xmp class="exa"><div id="folded_c"></div></xmp>
+				<xmp>$('#folded_c').Corners({
+type:'beveled',
+extent:'30px'
+})</xmp>
+			</div>
+			<div class="result"><div id="folded_c">beveled</div></div>
+		</section>
+	</section>
+	<section id="download" class="section">
+		<h1>Download</h1>
+		<p class="pro">It's an opensource free project under MIT license and download from here:</p>
+		<a href="" class="down_url">Download Corners.js</a>
+		<a href="" class="down_url">Download Corners.min.js</a>
+		<a href="" class="down_url">View at Github</a>
+	</section>
+	<section id="author" class="section">
+		<h1>About</h1>
+		<article>
+			Hi! I'm Jane Wu,a web front-end design hobbiest.<br>I developed the plugin dependently.<br>If you are interested .<a href="" class="a_style">Click here</a> for more information about me.
+		</article>
+	</section>
+	<footer>
+		<div class="footer f_left">By --Jane</div>
+		<div class="footer f_right">Copyright @ 2016 Jane Wu design All rights reserved</div>
+	</footer>
+</body>
+</html>

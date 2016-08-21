@@ -1,0 +1,215 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+@font-face {
+	font-family: 'my_font';
+	src: url('RBNo2Light.otf');
+}
+body{
+	background: url(Img/example-background.png);
+}
+header{
+	position: relative;
+	margin-top: 20px;
+	margin: 0 auto;
+}
+.all_alph{
+	width: 1200px;
+	margin: 20px auto;
+	text-align: center;
+}
+.para,.tips{
+	color: #CC3300;
+	text-shadow: 2px 1px rgba(255,255,255,.8);
+	background: rgba(254, 205, 174,.7);
+	display: inline-block;
+	padding: 0 5px;
+}
+.para+span{
+	font-size: 17px;
+	font-weight: thin;
+}
+article{
+	font-size: 20px;
+	line-height: 1.5em;
+}
+p{
+	margin: 15px 0;
+}
+h1{
+	font-family: 'my_font';
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.pro{
+	margin-top: 40px;
+	font-family: 'my-font';
+	font-size: 30px;
+}
+
+.header{
+	display: inline-block;
+	position: absolute;
+	width: 270px;
+	height: 60px;
+	background: #ff8638;
+	margin-top: 10px;
+}
+.h_left{
+	left: 0;
+
+}
+.h_right{
+	right: 0;
+}
+.alph{
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	line-height: 110px;
+	background: red;
+	font-size: 80px;
+	font-family: 'my_font', Arial;
+	margin: 0 -10px;
+}
+.alph:nth-child(odd){
+	top: 15px;
+}
+.j{
+	background:rgb(255,127,36);
+}
+.c,.n,.r{
+	background: #B8B8B8;
+}
+.o,.e,.s{
+	background:rgb(255,127,36);
+}
+
+#introduction,#documentation,#download{
+	background: rgba(255,134,56,.8);
+}
+#guide,#example,#author{
+	background: rgba(255,134,56,.6);
+}
+
+.section{
+	width: 1000px;
+	margin: 80px auto;
+	min-height: 200px;
+	background: white;
+	padding: 40px 60px;
+	overflow: hidden;
+}
+footer{
+	height: 60px;
+	margin-bottom: 10px;
+}
+.f_left{
+	width: 300px;
+	height: inherit;
+	float: left;
+	line-height: 60px;
+	background: #ff8638;
+	margin-left: 20px;
+	text-align: center;
+	font-family: 'my-font';
+	font-size: 30px;
+	font-style: italic;
+}
+.f_right{
+	text-align: center;
+	line-height: 60px;
+	float: right;
+	width: 900px;
+	height: 100%;
+	background: #ff8638;
+	color: #333333;
+	font-weight: bold;
+}
+h1{
+	height: 70px;
+	line-height: 70px;
+	max-width: 300px;
+	background: rgba(255,255,255,.5);
+	margin: 10px auto;
+	text-align: center;
+}
+.git_icon{
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjQwcHgiIGhlaWdodD0iNDBweCIgdmlld0JveD0iMTIgMTIgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMTIgMTIgNDAgNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiMzMzMzMzMiIGQ9Ik0zMiAxMy40Yy0xMC41IDAtMTkgOC41LTE5IDE5YzAgOC40IDUuNSAxNS41IDEzIDE4YzEgMC4yIDEuMy0wLjQgMS4zLTAuOWMwLTAuNSAwLTEuNyAwLTMuMiBjLTUuMyAxLjEtNi40LTIuNi02LjQtMi42QzIwIDQxLjYgMTguOCA0MSAxOC44IDQxYy0xLjctMS4yIDAuMS0xLjEgMC4xLTEuMWMxLjkgMC4xIDIuOSAyIDIuOSAyYzEuNyAyLjkgNC41IDIuMSA1LjUgMS42IGMwLjItMS4yIDAuNy0yLjEgMS4yLTIuNmMtNC4yLTAuNS04LjctMi4xLTguNy05LjRjMC0yLjEgMC43LTMuNyAyLTUuMWMtMC4yLTAuNS0wLjgtMi40IDAuMi01YzAgMCAxLjYtMC41IDUuMiAyIGMxLjUtMC40IDMuMS0wLjcgNC44LTAuN2MxLjYgMCAzLjMgMC4yIDQuNyAwLjdjMy42LTIuNCA1LjItMiA1LjItMmMxIDIuNiAwLjQgNC42IDAuMiA1YzEuMiAxLjMgMiAzIDIgNS4xYzAgNy4zLTQuNSA4LjktOC43IDkuNCBjMC43IDAuNiAxLjMgMS43IDEuMyAzLjVjMCAyLjYgMCA0LjYgMCA1LjJjMCAwLjUgMC40IDEuMSAxLjMgMC45YzcuNS0yLjYgMTMtOS43IDEzLTE4LjFDNTEgMjEuOSA0Mi41IDEzLjQgMzIgMTMuNHoiLz48L3N2Zz4=);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+xmp{
+	border:1px dashed #333;
+	padding: 8px;
+	margin: 10px 0;
+}
+.example_item{
+	padding: 0 80px;
+}
+.code{
+	width: 380px;
+	float: left;
+	margin: 20px 0;
+	font-size: 20px;
+}
+.result{
+	margin: 20px 0;
+	text-align: center;
+	line-height: 170px;
+	font-family: 'my-font';
+	font-size: 30px;
+}
+.result{
+	float: right;
+}
+#download a{
+	display: inline-block;
+	margin-top: 40px;
+	margin-right: 50px;
+	font-size: 20px;
+	color: firebrick;
+	padding: 3px 6px;
+	background: rgba(204, 0, 0,.2);
+	border: 2px dashed firebrick;
+}
+.a_style{
+	color: #333;
+	font-weight: bold;
+	display: inline-block;
+	border-bottom: 2px dashed #333; 
+}
+.step{
+	color: #cc3300;
+	font-size: 35px;
+	font-family: 'my-font';
+}
+#folded_a{
+	width: 300px;
+	height: 170px;
+	background: #d2d2d2;
+}
+#folded_b{
+	width: 300px;
+	height: 170px;
+	background: #d2d2d2;
+}
+#folded_c{
+	width: 300px;
+	height: 170px;
+	background: #d2d2d2;
+}
